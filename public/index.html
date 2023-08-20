@@ -56,5 +56,28 @@
         emailjs.init('{vNk9c9B4ou9I5wjL_}')
       })()
     </script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js'
+      import { getAnalytics } from 'https://www.gstatic.com/firebasejs/10.1.0/firebase-analytics.js'
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: 'AIzaSyCanUaBJE17JPkyZ7GWghhcJqPlrmHlXq8',
+        authDomain: 'myportfolio-f7da6.firebaseapp.com',
+        projectId: 'myportfolio-f7da6',
+        storageBucket: 'myportfolio-f7da6.appspot.com',
+        messagingSenderId: '842601259243',
+        appId: '1:842601259243:web:a93ca0326f42effdee5eae',
+        measurementId: 'G-K8XW36HLTX',
+      }
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig)
+      const analytics = getAnalytics(app)
+    </script>
   </body>
 </html>
